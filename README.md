@@ -1,2 +1,8 @@
-# Chrome-RobotFramework
-Project to Run a Robot Framework Selenium based with a container and VNC
+docker build -t gib0tdc/chrome-robotframework:1.0.0 .
+
+docker run -p 5900:5900 -p 5901:5901 \
+    -v $(pwd)/selenium:/home/apps/selenium \
+    -v $(pwd)/trigger_service:/home/apps/trigger_service \
+    -e VNC_SERVER_PASSWORD=some-password --name selenium_robot \
+    --user apps --privileged gib0tdc/chrome-robotframework:1.0.0
+
