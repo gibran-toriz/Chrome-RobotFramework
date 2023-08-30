@@ -11,7 +11,7 @@ docker run -d -p 5900:5900 -p 5901:5901 \
     --user apps --privileged gib0tdc/chrome-robotframework:tag
 
 
-## Invoke Trriger Service
+## Invoke Trigger Service
 
 curl --location 'http://localhost:5901/selenium/start' \
 --header 'Content-Type: application/json' \
