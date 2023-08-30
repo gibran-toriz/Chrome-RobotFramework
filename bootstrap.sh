@@ -85,7 +85,7 @@ run_vnc_server() {
     fi
 
     x11vnc -display ${DISPLAY} -forever ${passwordArgument} &
-    log_i "Starting Google Chrome..."
+    log_i "Starting Trigger Service..."
     run_trigger_service
     wait $!
 }

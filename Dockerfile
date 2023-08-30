@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y \
     xvfb \
     fluxbox \
     wmctrl \
-    wget
+    curl
 
 
  # Chrome instalation 
