@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "/Volumes/Ext/IW/Learn/Robocorp/robots/test_selenium/."
-    ],
-    "python.terminal.activateEnvironment": false
-}
